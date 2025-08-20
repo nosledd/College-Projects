@@ -18,7 +18,7 @@ public class mainpanel {
         window.setTitle("Yowaimo");
         window.setIconImage(image);
         window.setSize(800, 600);   // initial size
-         window.setLocationRelativeTo(null);    // center on screen
+        window.setLocationRelativeTo(null);    // center on screen
 
        
         JOptionPane.showMessageDialog(window, "This is a Custom Made Notepad to Run Java Programs");
