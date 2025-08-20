@@ -54,21 +54,17 @@ public class mainpanel {
 
         window.add(panel,BorderLayout.CENTER);
 
-         window.setVisible(true); */
+        window.setVisible(true); */
 
 
 
 
 
 
-
-
-         // ✅ Main panel with BoxLayout (vertical)
         JPanel panel = new JPanel();
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
         panel.setAlignmentX(Component.CENTER_ALIGNMENT);
 
-        // Label
         JLabel label = new JLabel("Create File");
         label.setFont(new Font("Arial", Font.BOLD, 20));
         label.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -76,7 +72,6 @@ public class mainpanel {
 
         panel.add(Box.createRigidArea(new Dimension(0, 20))); // spacing
 
-        // Text field
         JTextField text = new JTextField(15);
         text.setMaximumSize(text.getPreferredSize()); // keeps it from stretching
         text.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -84,12 +79,11 @@ public class mainpanel {
 
         panel.add(Box.createRigidArea(new Dimension(0, 10))); // spacing
 
-        // Button
         JButton button = new JButton("Save");
         button.setAlignmentX(Component.CENTER_ALIGNMENT);
         panel.add(button);
 
-        // Save functionality
+        // Save function
         button.addActionListener(e -> {
             String fileName = text.getText().trim();
             if (!fileName.isEmpty()) {
@@ -104,7 +98,7 @@ public class mainpanel {
             }
         });
 
-        // ✅ Put the panel in the CENTER of the window
+        //Put the panel in the CENTER of the window
         window.setLayout(new GridBagLayout()); 
         window.add(panel);
 
