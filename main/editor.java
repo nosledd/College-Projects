@@ -102,7 +102,7 @@ public class editor {
                 }
            }
         });
-
+ 
         
         //Run
         run.addActionListener(e -> {
