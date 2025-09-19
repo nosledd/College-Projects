@@ -32,8 +32,8 @@ public class editor {
         window.setMinimumSize(new Dimension(400,300));
         window.setTitle("Yowaimo");
         window.setIconImage(image);
-        window.setSize(800, 600);   // initial size
-        window.setLocationRelativeTo(null);    // center on screen
+        window.setSize(800, 600);   
+        window.setLocationRelativeTo(null);   
         
         JOptionPane.showMessageDialog(window, "This is a Custom Made Notepad to Run Java Programs");
 
