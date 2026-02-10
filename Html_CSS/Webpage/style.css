@@ -1,3 +1,5 @@
+/* Main.php */
+
 @font-face {
   font-family: 'Press Start 2P';
   src: url('fonts/PressStart2P-Regular.ttf') format('truetype');
@@ -37,10 +39,10 @@ body {
 }
 
 .home {
-    padding:10px;
-    display: flex;
-    gap: 20px;
-    border-bottom: 2px dashed #2b2929;
+  padding:10px;
+  display: flex;
+  gap: 20px;
+  border-bottom: 2px dashed #2b2929;
 }
 
 .home a {
@@ -98,7 +100,8 @@ body {
 
 .game{
     font-family: 'Press Start 2P', cursive;
-    padding: 20px 100px;
+    padding: 20px;
+    width: 100%;
     border: 3px ridge #ffffffb0;
     cursor: pointer;
 }
@@ -108,20 +111,19 @@ body {
   color: #fff;
 }
 
-.img1{
-  padding: 20px;
-}
+
 
 .design{
   border: 3px solid #000;
-  padding: 5px;
+  padding: 10px;
   text-align: center;
 }
 
 .design h3{
   font-family: 'Press Start 2P', cursive;
   font-size: 14px;
-  margin-bottom: 10px;
+  padding: 30px;
+  
 }
 
 .get{
@@ -148,8 +150,7 @@ body {
 
 
 
-
-/* TITLE */
+/* GameBoy.php */
 .title {
   text-align: center;
   font-family: 'Press Start 2P', cursive;
@@ -159,19 +160,19 @@ body {
 
 }
 
-/* MAIN CONTENT */
+
 .content {
   display: grid;
   grid-template-columns: 300px auto;
   padding: 30px;
 }
 
-/* LEFT IMAGE */
+
 .left img {
   width: 60%;
 }
 
-/* PANELS */
+
 .panel {
   border: 3px solid #000;
   padding: 20px;
@@ -189,7 +190,7 @@ body {
   padding-left: 10px;
 }
 
-/* DESCRIPTION */
+
 .description {
   border-top: 2px dashed #000;
   padding: 25px 30px;
@@ -201,26 +202,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* BACK BUTTON */
-.back {
-  text-align: center;
-  padding: 25px;
-}
 
-.back button {
-  font-family: 'Press Start 2P', cursive;
-  border: 3px solid #000;
-  background: #fff;
-  padding: 12px 25px;
-  cursor: pointer;
-}
-
-.back button:hover {
-  background: #000;
-  color: #fff;
-}
-
-/* FOOTER */
 footer {
   text-align: center;
   padding: 15px;
