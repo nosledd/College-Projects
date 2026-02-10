@@ -14,7 +14,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $_SESSION["user"] = $user;
 
-    header("Location: main.php"); // homepage
+    header("Location: main.php"); 
     exit();
 
   } else {
@@ -52,15 +52,15 @@ body {
   height: 100vh;
 }
 
-/* WINDOW */
-.window {
+
+.logwindow {
   width: 500px;
   background: #f5f5f5;
   border: 3px solid #000;
 }
 
-/* WINDOW BAR */
-.window-bar {
+
+.logwindow-bar {
   display: flex;
   justify-content: space-between;
   padding: 10px;
@@ -70,7 +70,7 @@ body {
   background: #e0e0e0;
 }
 
-.buttons div {
+.logbuttons div {
   width: 12px;
   height: 12px;
   border: 2px solid #000;
@@ -78,15 +78,15 @@ body {
   margin-left: 5px;
 }
 
-/* TITLE */
-.title {
+
+.logtitle {
   text-align: center;
   padding: 25px;
   font-family: 'Press Start 2P', cursive;
   font-size: 14px;
 }
 
-/* FORM */
+
 .form-box {
   padding: 25px 40px;
 }
@@ -96,7 +96,7 @@ label {
   font-size: 10px;
 }
 
-input {
+input{
   width: 100%;
   padding: 10px;
   margin: 10px 0 20px;
@@ -104,7 +104,7 @@ input {
   background: #fff;
 }
 
-/* BUTTON */
+
 button {
   width: 100%;
   padding: 12px;
@@ -120,7 +120,7 @@ button:hover {
   color: #000;
 }
 
-/* ERROR */
+
 .error {
   color: red;
   font-size: 12px;
@@ -128,7 +128,7 @@ button:hover {
   text-align: center;
 }
 
-/* FOOTER */
+
 .footer {
   text-align: center;
   padding: 12px;
@@ -140,22 +140,19 @@ button:hover {
 </head>
 <body>
 
-<div class="window">
+<div class="logwindow">
 
-  <!-- Window Bar -->
-  <div class="window-bar">
-    <span>RetroWebSite — Login</span>
-    <div class="buttons">
-      <div></div><div></div><div></div>
-    </div>
+ 
+  <div class="logwindow-bar">
+    <p>RetroWebSite — Login</p>
   </div>
 
-  <!-- Title -->
-  <div class="title">
+
+  <div class="logtitle">
     :: SYSTEM LOGIN ::
   </div>
 
-  <!-- Form -->
+  
   <div class="form-box">
 
     <?php if($error != "") { ?>
@@ -176,9 +173,8 @@ button:hover {
 
   </div>
 
-  <!-- Footer -->
   <div class="footer">
-    © 2024 RetroWebSite
+    © 2026 RetroWebSite
   </div>
 
 </div>
