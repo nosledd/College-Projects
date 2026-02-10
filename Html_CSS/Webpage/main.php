@@ -17,18 +17,18 @@
     <p>RetroWeb</p>
   
    <?php if(isset($_SESSION['user'])) { ?>
-    <span class="user">
-      Welcome, <?php echo $_SESSION['user']; ?> 👾
-    </span>
+    <p class="user">
+      Welcome, <?php echo $_SESSION['user']; ?> 
+    </p>
    <?php } ?>
 
   </div>
 
 
   <nav class="home">
-    <a href="home"> Home </a>
-    <a href="about"> About </a>
-    <a href="contact"> Contact </a>
+    <a href=""> Home </a>
+    <a href=""> About </a>
+    <a href=""> Contact </a>
 
     <?php if(isset($_SESSION['user'])) { ?>
      <a href="logout.php"> Logout </a>
@@ -39,7 +39,7 @@
   <section class="welcome">
     <h1> WELCOME TO THE INTERNET! </h1>
     <a href="login.php">
-       <button class="enter"> -- LOGIN -- </button>
+       <button class="enter"> :: LOGIN :: </button>
     </a>
   </section>
 
@@ -59,18 +59,18 @@
     </div>
 
     <div class="design">
-      <a href="gameboy.html">
+      <a href="gameboy.php">
        <button class="game">
-         <img src="images\cassette_tape.png" width="120" class="img1">
+         <img src="images\cassette_tape1.png" width="120" class="img1">
          <h3> Cassette Tape </h3>
        </button>
      </a>
     </div>
 
     <div class="design">
-      <a href="gameboy.html">
+      <a href="gameboy.php">
        <button class="game">
-         <img src="images\floppy_disk.png" width="120" class="img1">
+         <img src="images\floppy_disk1.png" width="120" class="img1">
          <h3> Floppy Disk </h3>
        </button>
       </a>
@@ -83,7 +83,7 @@
   </section> 
 
   <p class="rights">
-    © 2024 RetroWebSite. All rights reserved. 
+    © 2026 RetroWebSite. All rights reserved. 
   </p>
 
 
