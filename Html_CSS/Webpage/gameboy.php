@@ -2,7 +2,7 @@
 session_start();
 
 if(!isset($_SESSION['user'])) {
-  echo "Please Log IN";
+  echo "<p style='text-align:center;'>Please Log In</p>";
   exit();
 }
 ?>
@@ -14,7 +14,6 @@ if(!isset($_SESSION['user'])) {
   <meta charset="UTF-8">
   <title>RetroWebSite</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -25,24 +24,21 @@ if(!isset($_SESSION['user'])) {
   </div>
 
   <nav class="home">
-    <a href="main.html"> Home </a>
+    <a href="main.php"> Home </a>
     <a href="about"> About </a>
     <a href="contact"> Contact </a>
   </nav>
 
 
-  <!-- Title -->
+
   <h1 class="title">:: RETRO GAME BOY ::</h1>
 
-  <!-- Main Layout -->
   <div class="content">
 
-    <!-- LEFT : IMAGE -->
     <div class="left">
       <img src="images\gameboy.png" alt="GameBoy">
     </div>
-
-    <!-- RIGHT : CONTENT -->
+   
     <div class="right">
 
       <div class="panel">
@@ -68,7 +64,7 @@ if(!isset($_SESSION['user'])) {
 
   </div>
 
-  <!-- Description -->
+ 
   <div class="description">
     <h3>Portable Nostalgia</h3>
     <p>
@@ -80,15 +76,10 @@ if(!isset($_SESSION['user'])) {
 
   
 
-  <!-- Back Button -->
-  <div class="back">
-    <button>Go Back</button>
+  
+  <div class="rights">
+    © 2026 RetroWebSite. All rights reserved.
   </div>
-
-  <!-- Footer -->
-  <footer>
-    © 2024 RetroWebSite. All rights reserved.
-  </footer>
 
 </div>
 
