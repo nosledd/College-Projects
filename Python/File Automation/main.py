@@ -1,6 +1,7 @@
 import os
 import shutil
 from tkinter import filedialog
+import sorter
 
 def file_access():
     file_path=filedialog.askopenfilename()
@@ -14,9 +15,10 @@ def file_access():
 
     destination= "E:/Git/College-Projects/Python/File Automation/uploads/" + file_name
     shutil.copy(file_path,destination)
-
+    sorter.sortet(file_name)
 
 file_access()
+
     
 
 
