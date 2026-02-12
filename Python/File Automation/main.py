@@ -18,7 +18,3 @@ def file_access():
     sorter.sortet(file_name)
 
 file_access()
-
-    
-
-
