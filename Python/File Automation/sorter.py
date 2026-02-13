@@ -1,8 +1,20 @@
 def sortet(file_name):
+    
+    file_name=file_name.lower()
+    print(file_name)
+
     subjects={
-        "Maths":["algebra", "addition"],
+        "flutter.pdf":["flutter.pdf", "addition"],
         "Yt":["Who needs roads lol"]
     }
 
-    file_name=file_name.lower()
-    print(file_name)
+    for i in subjects:
+        if (file_name == i):
+           print("Yes")
+           break
+        else:
+           continue
+           
+          
+
+    
