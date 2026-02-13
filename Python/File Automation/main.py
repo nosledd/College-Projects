@@ -2,8 +2,16 @@ import os
 import shutil
 from tkinter import filedialog
 import sorter
+import tkinter as tk
+
+
 
 def file_access():
+    root = tk.Tk()
+    root.withdraw() #i am hidding the ghost window
+
+    selected_path = filedialog.askdirectory(title="Create a Folder")
+
     file_path=filedialog.askopenfilename()
     print(file_path)
 
@@ -17,6 +25,15 @@ def file_access():
     shutil.copy(file_path,destination)
     sorter.sortet(file_name)
 
+
 file_access()
+
+
+
+
+
+
+
+
 
 
