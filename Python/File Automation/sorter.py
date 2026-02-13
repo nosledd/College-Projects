@@ -1,18 +1,20 @@
-def sortet(file_name,folders):
+def sortet(file_name):
     
     file_name=file_name.lower()
     print(file_name)
 
     subjects={
-        "flutter.pdf":["flutter.pdf", "addition"],
+        "flutter":["flutter.pdf", "addition"],
         "Yt":["Who needs roads lol"]
     }
 
-    for i in folders:
+    for i in subjects:
         print(i)
         if (file_name == i):
-           print("Yes")
-           break
+             destination= "E:/Git/College-Projects/Python/File Automation/uploads/" + file_name
+             shutil.copy(file_path,destination)
+             sorter.sortet(file_name,)
+             break
         else:
            continue
            
