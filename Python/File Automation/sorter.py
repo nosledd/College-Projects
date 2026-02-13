@@ -1,4 +1,4 @@
-def sortet(file_name):
+def sortet(file_name,folders):
     
     file_name=file_name.lower()
     print(file_name)
@@ -8,7 +8,8 @@ def sortet(file_name):
         "Yt":["Who needs roads lol"]
     }
 
-    for i in subjects:
+    for i in folders:
+        print(i)
         if (file_name == i):
            print("Yes")
            break
