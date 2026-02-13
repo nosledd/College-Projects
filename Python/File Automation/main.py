@@ -5,12 +5,11 @@ import sorter
 import tkinter as tk
 
 
-
 def file_access():
     root = tk.Tk()
     root.withdraw() #i am hidding the ghost window
 
-    folders = filedialog.askdirectory(title="Create a Folder")
+    # folders = filedialog.askdirectory(title="Create a Folder")
 
     file_path=filedialog.askopenfilename()
     print(file_path)
@@ -20,10 +19,6 @@ def file_access():
 
     extension=os.path.splitext(file_name)[0]
     print(extension)
-
-    destination= "E:/Git/College-Projects/Python/File Automation/uploads/" + file_name
-    shutil.copy(file_path,destination)
-    sorter.sortet(file_name,folders)
 
 
 file_access()
