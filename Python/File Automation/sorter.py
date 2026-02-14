@@ -16,17 +16,4 @@ def sortet(file_name):
              sorter.sortet(file_name,)
              break
         else:
-           continue
-           
-    for i in subjects:
-        print(i)
-        if (file_name == i):
-             destination= "E:/Git/College-Projects/Python/File Automation/uploads/" + file_name
-             shutil.copy(file_path,destination)
-             sorter.sortet(file_name,)
-             break
-        else:
-           continue
-          
-
-    
+           continue 
