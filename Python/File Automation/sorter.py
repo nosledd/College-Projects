@@ -1,7 +1,9 @@
-def sortet(file_name):
+import shutil
+
+def sortet(file_path,extension):
     
-    file_name=file_name.lower()
-    print(file_name)
+    extension=extension.lower()
+    print("name",extension)
 
     subjects={
         "flutter":["flutter.pdf", "addition"],
@@ -9,12 +11,12 @@ def sortet(file_name):
     }
 
     for i in subjects:
-        print(i)
-        if (file_name == i):
-             destination= "E:/Git/College-Projects/Python/File Automation/uploads/" + file_name
+        print("Loop",i)
+        if (extension == i):
+             destination= "E:/Git/College-Projects/Python/File Automation/uploads/sorted_notes/Python/"
+             print(file_path)
              shutil.copy(file_path,destination)
-             sorter.sortet(file_name,)
              break
         else:
-           continue             
+           print("Error")         
         
