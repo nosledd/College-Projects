@@ -29,5 +29,4 @@ def sortet(file_name):
              shutil.copy(file_path,destination)
              sorter.sortet(file_name,)
              break
-        else:
-           continue 
+        
