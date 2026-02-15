@@ -21,7 +21,7 @@ def file_access():
     print("split",extension)
 
     sorter.sortet(file_path,extension)
-    pandas_view.pan()
+    pandas_view.panda(file_path)
 
 
 file_access()
