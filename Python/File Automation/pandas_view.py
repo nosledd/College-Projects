@@ -1,4 +1,5 @@
 import pandas as pan
 
-def pan():
-    file=pan.read_csv("file_path")
+def panda(file_path):
+    file=pan.read_csv(file_path)
+    print(file)
