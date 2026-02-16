@@ -3,10 +3,13 @@ from tkinter import filedialog
 import tkinter as tk
 
 import sorter
-import pandas_view
+import database
 
 
 def file_access():
+
+    database.create_table()
+
     root = tk.Tk()
     root.withdraw() #i am hidding the ghost window
 
