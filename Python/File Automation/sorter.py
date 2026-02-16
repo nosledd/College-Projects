@@ -1,5 +1,7 @@
 import shutil
 import os
+import database
+
 
 def sortet(file_path,file_name):
     
@@ -18,6 +20,7 @@ def sortet(file_path,file_name):
                 os.makedirs(destination)
             
             shutil.copy(file_path,destination)
+            database.insert_record(file_name, subject, destination)
             break
         else:
             for keyword in subjects[subject]:
@@ -27,6 +30,7 @@ def sortet(file_path,file_name):
                          os.makedirs(destination)
             
                     shutil.copy(file_path,destination)
+                    database.insert_record(file_name, subject, destination)
                     break
         
 # theres still lot of logic work to be done
