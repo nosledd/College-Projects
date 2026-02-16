@@ -17,11 +17,10 @@ def file_access():
     file_name=os.path.basename(file_path)
     print(file_name)
 
-    extension=os.path.splitext(file_name)[0]
-    print("split",extension)
+    file_name=os.path.splitext(file_name)[0]
+    print("split",file_name)
 
-    sorter.sortet(file_path,extension)
-    pandas_view.panda(file_path)
+    sorter.sortet(file_path,file_name)
 
 
 file_access()
