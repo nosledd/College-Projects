@@ -1,4 +1,5 @@
 import shutil
+import os
 
 def sortet(file_path,file_name):
     
@@ -7,24 +8,27 @@ def sortet(file_path,file_name):
 
     subjects={
         "flutter":["flutter", "addition"],
-        "Yt":["Who needs roads lol"]
+        "python":["py"]
     }
 
     for subject in subjects:
-        print(subject)
         if subject in file_name:
-            print("Found Thrpugh file name")
+            destination= "E:/Git/College-Projects/Python/File Automation/uploads/sorted_notes/"+subject+"/"
+            if not os.path.exists(destination):
+                os.makedirs(destination)
+            
+            shutil.copy(file_path,destination)
+            break
         else:
-             for keyword in subjects[subject]:
-                 if keyword in file_name:
-                     print("Found through keyword")
+            for keyword in subjects[subject]:
+                if keyword in file_name:
+                    destination= "E:/Git/College-Projects/Python/File Automation/uploads/sorted_notes/"+subject+"/"
+                    if not os.path.exists(destination):
+                         os.makedirs(destination)
+            
+                    shutil.copy(file_path,destination)
+                    break
         
-        
-    '''if (file_name == i):
-             destination= "E:/Git/College-Projects/Python/File Automation/uploads/sorted_notes/Python/"
-             print(file_path)
-             shutil.copy(file_path,destination)
-             break
-        else:
-           print("Error")  '''       
+# theres still lot of logic work to be done
+     
         
