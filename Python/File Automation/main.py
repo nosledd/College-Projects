@@ -4,6 +4,7 @@ import tkinter as tk
 
 import sorter
 import database
+import pandas_view
 
 
 def file_access():
