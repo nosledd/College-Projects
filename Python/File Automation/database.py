@@ -8,7 +8,6 @@ def connect_db():
     return conn, cursor
 
 
-
 def create_table():
     conn, cursor = connect_db()
 
@@ -24,7 +23,6 @@ def create_table():
 
     conn.commit()
     conn.close()
-
 
 
 def insert_record(file_name, subject, path):
