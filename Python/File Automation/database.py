@@ -12,12 +12,12 @@ def create_table():
     conn, cursor = connect_db()
 
     cursor.execute("""
-        CREATE TABLE IF NOT EXISTS notes (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            file_name TEXT,
-            subject TEXT,
-            path TEXT,
-            upload_date TEXT
+        create table if not exists notes (
+            id int primary key autoincrement,
+            file_name varchar(20),
+            subject varchar(20),
+            path varchar(100),
+            upload_date varchar(20)
         )
     """)
 
@@ -28,13 +28,10 @@ def create_table():
 def insert_record(file_name, subject, path):
     conn, cursor = connect_db()
 
-    upload_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    upload_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")        #pending
     print(upload_date)
 
-    cursor.execute("""
-        INSERT INTO notes (file_name, subject, path, upload_date)
-        VALUES (?, ?, ?, ?)
-    """, (file_name, subject, path, upload_date))
+    cursor.execute("insert into notes (file_name, subject, path, upload_date) values (?, ?, ?, ?) ", (file_name, subject, path, upload_date))
 
     conn.commit()
     conn.close()
