@@ -6,3 +6,6 @@ class pann:
     df = pan.read_sql("SELECT * FROM notes", connect)
     print(df)
     connect.close()
+
+
+#pending
