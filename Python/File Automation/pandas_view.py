@@ -6,6 +6,3 @@ class pann:
     df = pan.read_sql("SELECT * FROM notes", connect)
     print(df)
     connect.close()
-
-    python_notes = df[df["subject"] == "python"]
-    print(":",python_notes)
