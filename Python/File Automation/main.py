@@ -4,7 +4,6 @@ import tkinter as tk
 
 import sorter
 import database
-import pandas_view
 
 
 def file_access():
@@ -13,8 +12,6 @@ def file_access():
 
     root = tk.Tk()
     root.withdraw() #i am hidding the ghost window
-
-    # folders = filedialog.askdirectory(title="Create a Folder")
 
     file_path=filedialog.askopenfilename()
 
@@ -25,6 +22,5 @@ def file_access():
     print("split",file_name)
 
     sorter.sortet(file_path,file_name)
-
 
 file_access()
