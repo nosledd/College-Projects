@@ -22,13 +22,15 @@ def sortet(file_path,file_name):
             shutil.copy(file_path,destination)
             database.insert_record(file_name, subject, destination)
             break
-        else:
-            destination= "E:/Git/College-Projects/Python/File Automation/uploads/sorted_notes/others/"
-            if not os.path.exists(destination):
-                    os.makedirs(destination)
+       
+    else:
+        subject="others"
+        destination= "E:/Git/College-Projects/Python/File Automation/uploads/sorted_notes/others/"
+        if not os.path.exists(destination):
+            os.makedirs(destination)
             
-            shutil.copy(file_path,destination)
-            database.insert_record(file_name, subject, destination)
-            break
+        shutil.copy(file_path,destination)
+        database.insert_record(file_name, subject, destination)
+        
         
 # pending       
